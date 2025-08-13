@@ -1,0 +1,46 @@
+# --- Terraform directories (anywhere in the repo)
+**/.terraform/*
+
+# --- Local state files (never commit)
+*.tfstate
+*.tfstate.*
+crash.log
+
+# --- Local-only override files (if you use them)
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# --- Sensitive variable files
+terraform.tfvars
+terraform.tfvars.json
+*.auto.tfvars
+*.auto.tfvars.json
+*.tfvars
+*.tfvars.json
+
+# --- Plan files (binary)
+*.tfplan
+*.tfplan.*
+
+# --- Module/package archives
+*.zip
+*.tar.gz
+*.tgz
+
+# --- Terragrunt cache (if you use Terragrunt)
+**/.terragrunt-cache/*
+
+# --- CLI configs (usually in $HOME, but ignore if present)
+.terraformrc
+terraform.rc
+
+# --- IDE / editor
+.vscode/
+.idea/
+*.code-workspace
+
+# --- OS cruft
+.DS_Store
+Thumbs.db
